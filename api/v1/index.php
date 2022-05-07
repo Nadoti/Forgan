@@ -8,10 +8,6 @@ $router = new Router("");
 /*** User */
 $router->group("user")->namespace("Source\Service");
 $router->post("/authenticate", "AuthController:authenticate");
-/**Consulta CRN */
-
-$router->group("crn");
-$router->get("/get/{crn}", "CrnController:consult");
 
 /** Erro */
 $router->group("erro")->namespace('');
@@ -24,5 +20,5 @@ $router->error();
 
 /*** Erro de redirect */
 if ($router->error()) {
-    $router->redirect("curlrequest/tcc/api/v2/erro/{$router->error()}");
+    $router->redirect( URLBASE . "/api/v1/erro/{$router->error()}");
 }

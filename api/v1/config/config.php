@@ -16,3 +16,8 @@ define("PDO_CONFIG", "mysql:host=127.0.0.1;dbname=forgan;charset=utf8");
  * JWT Key access
  */
  define("JWTKEY", "dahdhuduhaiu");
+
+ /**
+  * Caminho da API
+  */
+ define("URLBASE", '/curlrequest/forgan/Forgan/');

@@ -5,7 +5,6 @@ namespace Source\Service;
 use Source\Model\User;
 
 /**
- * /api/user/authorization
  * 
  * Classe responsavel pelas autoriaçoes do usuario
  * 
